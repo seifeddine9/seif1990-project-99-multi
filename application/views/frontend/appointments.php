@@ -131,7 +131,7 @@
 <style type="text/css">
     
 
-    @media (max-width: 380px){}
+    @media (max-width: 380px){
 #book-appointment-wizard #wizard-frame-2 .frame-container .frame-content {
     margin-left: 0% !important;
 }}

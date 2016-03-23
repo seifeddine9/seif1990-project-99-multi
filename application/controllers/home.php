@@ -215,11 +215,11 @@ class home extends CI_Controller {
         $view['user_id'] = $this->session->userdata('user_id');
         $view['company_name'] = $this->settings_model->get_setting('company_name',$id_tenant);
         $view['date_format'] = $this->settings_model->get_setting('date_format',$id_tenant);
-        $view['available_services'] = $this->services_model->get_available_services();
+        $view['available_services'] = $this->services_model->get_available_services($id_tenant);
         $view['customer_data'] = $this->customers_model->get_row($this->session->userdata('user_id'));
         $view['role_slug'] = $this->session->userdata('role_slug');
 
-        $available_providers = $this->providers_model->get_available_providers();
+        $available_providers = $this->providers_model->get_available_providers($id_tenant);
         foreach ($available_providers as $index => $provider) {
             $stripped_data = array(
                 'id' => $provider['id'],
@@ -238,7 +238,7 @@ class home extends CI_Controller {
             // Load the appointments data and enable the manage mode of the page.
             $manage_mode = TRUE;
 
-            $results = $this->waiting_model->get_batch(array('hash' => $appointment_hash));
+            $results = $this->waiting_model->get_batch(array('hash' => $appointment_hash),array('id_tenant' => $id_tenant));
 
             if (count($results) === 0) {
                 // The requested appointment doesn't exist in the database. Display
@@ -270,7 +270,7 @@ class home extends CI_Controller {
 
 
         $waitings = $this->waiting_model
-                ->get_batch(array('id_users_customer' => $this->session->userdata('user_id')));
+                ->get_batch(array('id_users_customer' => $this->session->userdata('user_id')),array('id_tenant' => $id_tenant));
 
         foreach ($waitings as &$waiting) {
             $waiting['service'] = $this->services_model
@@ -355,8 +355,9 @@ class home extends CI_Controller {
             $customer['mobile_number'] = $newCustomer['mobile_number'];
             $customer['phone_number'] = $newCustomer['phone_number'];
 
-
-
+            $id_tenant = $this->session->userdata('id_tenant');
+            $customer['id_tenant'] = $id_tenant;
+            
             $customer['id'] = $this->customers_model->updatee($customer);
 
 
@@ -387,7 +388,10 @@ class home extends CI_Controller {
             $post_data = $_POST['postData'];
             $newCustomer = $_POST['post_data']['newCustomer'];
             $customer['mobile_number'] = $newCustomer['mobile_number'];
-
+            
+            $id_tenant = $this->session->userdata('id_tenant');
+            $customer['id_tenant'] = $id_tenant;
+            
             $customer['id'] = $this->customers_model->updatee($customer);
 
 
@@ -412,8 +416,10 @@ class home extends CI_Controller {
 
             $post_data = $_POST['postData'];
             $adresses = $_POST['post_data']['adresses'];
-
-
+            
+            $id_tenant = $this->session->userdata('id_tenant');
+            $customer['id_tenant']= $id_tenant;
+            
             $customer['address'] = $adresses['address'];
             $customer['city'] = $adresses['city'];
             $customer['zip_code'] = $adresses['zip_code'];
@@ -444,7 +450,11 @@ class home extends CI_Controller {
 
             $post_data = $_POST['postData'];
             $adresses = $_POST['post_data']['adresses'];
+            
+            $id_tenant = $this->session->userdata('id_tenant');
 
+            $customer['id_tenant']=$id_tenant;
+            
             $customer['address2'] = $adresses['address2'];
             $customer['city2'] = $adresses['city2'];
             $customer['zip_code2'] = $adresses['zip_code2'];
@@ -485,9 +495,9 @@ class home extends CI_Controller {
             $this->profile();
         } else {
             $data = $this->upload->data();
-
+            
             $customer = $this->customers_model->get_row($this->session->userdata('user_id'));
-
+            
             $customer['src_photo'] = $config['upload_path'] . $data['file_name'];
             $customer['id'] = $this->customers_model->updatee($customer);
 
@@ -551,7 +561,7 @@ class home extends CI_Controller {
 
 
             // :: add notification RECORD to DATABASE
-
+            $notifications['id_tenant'] = $id_tenant;
             $notifications['message_action'] = 'le client ' . $customer['first_name'] . ' a supprimer un rendez-vous le ' . $appointment['book_datetime'] . ' pour le service ' . $service['name'];
             $notifications['type'] = 'rendez-vous supprimé';
             $notifications['id'] = $this->notifications_model->insert($notifications);
@@ -559,11 +569,11 @@ class home extends CI_Controller {
             // :: SYNC APPOINTMENT REMOVAL WITH GOOGLE CALENDAR
             if ($appointment['id_google_calendar'] != NULL) {
                 try {
-                    $google_sync = $this->providers_model->get_setting('google_sync', $appointment['id_users_provider']);
+                    $google_sync = $this->providers_model->get_setting('google_sync', $appointment['id_users_provider'],$id_tenant);
 
                     if ($google_sync == TRUE) {
                         $google_token = json_decode($this->providers_model
-                                        ->get_setting('google_token', $provider['id']));
+                                        ->get_setting('google_token', $provider['id'],$id_tenant));
                         $this->load->library('Google_Sync');
                         $this->google_sync->refresh_token($google_token->refresh_token);
                         $this->google_sync->delete_appointment($provider, $appointment['id_google_calendar']);
@@ -702,7 +712,10 @@ class home extends CI_Controller {
     private function search_any_provider($service_id, $selected_date) {
         $this->load->model('providers_model');
         $this->load->model('services_model');
-        $available_providers = $this->providers_model->get_available_providers();
+        
+        $id_tenant = $this->session->userdata('id_tenant');
+
+        $available_providers = $this->providers_model->get_available_providers($id_tenant);
         $service = $this->services_model->get_row($service_id);
         $provider_id = NULL;
         $max_hours_count = 0;
@@ -745,10 +758,11 @@ class home extends CI_Controller {
         
         $id_tenant = $this->session->userdata('id_tenant');
         // Get the provider's working plan and reserved appointments.
-        $working_plan = json_decode($this->providers_model->get_setting('working_plan', $provider_id), true);
+        $working_plan = json_decode($this->providers_model->get_setting('working_plan', $provider_id, $id_tenant), true);
 
         $where_clause = array(
-            'id_users_provider' => $provider_id
+            'id_users_provider' => $provider_id,
+            'id_tenant' => $id_tenant
         );
 
         $reserved_appointments = $this->appointments_model->get_batch($where_clause);
@@ -1101,6 +1115,8 @@ class home extends CI_Controller {
             $customer_id = $customer['id'];
             $appointment['id_users_customer'] = $customer_id;
             $appointment['is_unavailable'] = (int) $appointment['is_unavailable']; // needs to be type casted
+            $appointment['id_tenant']=$id_tenant;
+            
             $appointment['id'] = $this->appointments_model->add($appointment);
             $appointment['hash'] = $this->appointments_model->get_value('hash', $appointment['id']);
 
@@ -1117,6 +1133,7 @@ class home extends CI_Controller {
             // :: add notification RECORD to DATABASE
 
             $appointment['book_datetime'] = $this->appointments_model->get_value('book_datetime', $appointment['id']);
+            $notifications['id_tenant'] = $id_tenant;
             $notifications['message_action'] = 'le client ' . $customer['first_name'] . ' a ajouté un rendez-vous le ' . $appointment['book_datetime'] . ' pour le service ' . $service['name'];
             $notifications['type'] = 'nouveau rendez-vous';
 
@@ -1126,11 +1143,11 @@ class home extends CI_Controller {
             // The provider must have previously granted access to his google calendar account
             // in order to sync the appointment.
             try {
-                $google_sync = $this->providers_model->get_setting('google_sync', $appointment['id_users_provider']);
+                $google_sync = $this->providers_model->get_setting('google_sync', $appointment['id_users_provider'],$id_tenant);
 
                 if ($google_sync == TRUE) {
                     $google_token = json_decode($this->providers_model
-                                    ->get_setting('google_token', $appointment['id_users_provider']));
+                                    ->get_setting('google_token', $appointment['id_users_provider'],$id_tenant));
 
                     $this->load->library('google_sync');
                     $this->google_sync->refresh_token($google_token->refresh_token);
@@ -1180,7 +1197,7 @@ class home extends CI_Controller {
                 $this->load->library('Notifications');
 
                 $send_provider = $this->providers_model
-                        ->get_setting('notifications', $provider['id']);
+                        ->get_setting('notifications', $provider['id'],$id_tenant);
 
                 if (!$post_data['manage_mode']) {
                     $customer_title = $this->lang->line('appointment_booked');
@@ -1262,6 +1279,8 @@ class home extends CI_Controller {
              * */
             //$customer_id = $this->customers_model->add($customer);
             //$waiting['id_users_customer'] = $customer_id;
+            
+            $waiting['id_tenant']= $id_tenant;
             $waiting['id'] = $this->waiting_model->add($waiting);
             //$waiting['hash'] = $this->appointments_model->get_value('hash', $waiting['id']);
             $customer = $this->customers_model->get_row($this->session->userdata('user_id'));
@@ -1277,6 +1296,8 @@ class home extends CI_Controller {
             // :: add notification RECORD to DATABASE
 
             $waiting['book_datetime'] = $this->waiting_model->get_value('book_datetime', $waiting['id']);
+            
+            $notifications['id_tenant'] = $id_tenant;
             $notifications['message_action'] = 'le client ' . $customer['first_name'] . ' a demandé un rendez-vous le ' . $waiting['book_datetime'] . ' pour le service ' . $service['name'];
             $notifications['type'] = 'nouveau demande liste d attente';
 
@@ -1288,7 +1309,7 @@ class home extends CI_Controller {
                 $this->load->library('Notifications');
 
                 $send_provider = $this->providers_model
-                        ->get_setting('notifications', $provider['id']);
+                        ->get_setting('notifications', $provider['id'],$id_tenant);
                 $reason = 'hello';
 
                 $customer_title = 'Nouvelle demande au liste d attente';
@@ -1302,7 +1323,7 @@ class home extends CI_Controller {
                         . $appointment['hash'];
 
                 if ($send_provider == TRUE) {
-                    $this->notifications->send_waiting_details($appointment, $provider, $service, $customer, $company_settings, $customer_title, $customer_message, $customer_link, $provider['email']);
+                    $this->notifications->send_waiting_details($appointment, $provider, $service, $customer, $company_settings, $provider_title, $provider_message, $customer_link, $provider['email']);
                 }
 
                 $send_customer = $this->settings_model->get_setting('customer_notifications',$id_tenant);

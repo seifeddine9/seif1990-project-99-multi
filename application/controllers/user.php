@@ -152,7 +152,7 @@ class User extends CI_Controller {
         $this->load->model('settings_model');
         $view['base_url'] = $this->config->item('base_url');
         $view['company_name'] = $this->settings_model->get_setting('company_name',$id_tenant);
-        $view['available_categories'] = $this->services_model->get_all_categories();
+        $view['available_categories'] = $this->services_model->get_all_categories(array('id_tenant' => $id_tenant));
 
         $user_id = $this->session->userdata('user_id');
         if ($user_id == TRUE) {

@@ -80,7 +80,7 @@ class Backend extends CI_Controller {
             $view['secretary_providers'] = array();
         }
 
-        $results = $this->appointments_model->get_batch(array('hash' => $appointment_hash));
+        $results = $this->appointments_model->get_batch(array('hash' => $appointment_hash),array('id_tenant' => $id_tenant));
         if ($appointment_hash != '' && count($results) > 0) {
             $appointment = $results[0];
             $appointment['customer'] = $this->customers_model->get_row($appointment['id_users_customer']);
