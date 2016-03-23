@@ -165,7 +165,38 @@ class User extends CI_Controller {
         $this->load->view('user/nous_rejoindre', $view);
         $this->load->view('user/footer', $view);
     }
+    
+    /*     * ******************
+     * * redirect the browser to apply for a job  page
+     * * display the form to send 
+     * *
+     */
 
+    public function new_tenant() {
+
+        $this->load->model('services_model');
+        
+        $id_tenant = $this->session->userdata('id_tenant');
+        
+        $this->load->model('customers_model');
+        $this->load->model('settings_model');
+        $view['base_url'] = $this->config->item('base_url');
+        $view['company_name'] = $this->settings_model->get_setting('company_name',$id_tenant);
+        $view['available_categories'] = $this->services_model->get_all_categories(array('id_tenant' => $id_tenant));
+
+        $user_id = $this->session->userdata('user_id');
+        if ($user_id == TRUE) {
+            $view['role_slug'] = $this->session->userdata('role_slug');
+            $view['customer_data'] = $this->customers_model->get_row($this->session->userdata('user_id'));
+            $view['user_id'] = $this->session->userdata('user_id');
+        }
+
+        $this->load->view('user/header', $view);
+        $this->load->view('user/new_tenant', $view);
+        $this->load->view('user/footer', $view);
+    }
+    
+    
     /*     * *****
      * *  redirect the user to the sign up page 
      * *

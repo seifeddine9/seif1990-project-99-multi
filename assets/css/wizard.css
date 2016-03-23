@@ -1,0 +1,1063 @@
+/* *********  form wizard  **************************** */
+
+.form_wizard .stepContainer {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0 solid #CCC;
+    overflow-x: hidden;
+}
+/**-------**/
+
+.wizard_horizontal ul.wizard_steps {
+    display: table;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    margin: 0 0 20px;
+}
+
+.wizard_horizontal ul.wizard_steps li {
+    display: table-cell;
+    text-align: center;
+}
+
+.wizard_horizontal ul.wizard_steps li a,
+.wizard_horizontal ul.wizard_steps li:hover {
+    display: block;
+    position: relative;
+    -moz-opacity: 1;
+    filter: alpha(opacity: 100);
+    opacity: 1;
+    color: #666;
+}
+
+.wizard_horizontal ul.wizard_steps li a:before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    background: #ccc;
+    top: 20px;
+    width: 100%;
+    z-index: 4;
+    left: 0;
+}
+
+.wizard_horizontal ul.wizard_steps li a.disabled .step_no {
+    background: #ccc;
+}
+
+.wizard_horizontal ul.wizard_steps li a .step_no {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 100px;
+    display: block;
+    margin: 0 auto 5px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.wizard_horizontal ul.wizard_steps li a.selected:before,
+.step_no {
+    background: #34495E;
+    color: #fff;
+}
+
+.wizard_horizontal ul.wizard_steps li a.done:before,
+.wizard_horizontal ul.wizard_steps li a.done .step_no {
+    background: #1ABB9C;
+    color: #fff;
+}
+
+.wizard_horizontal ul.wizard_steps li:first-child a:before {
+    left: 50%;
+}
+
+.wizard_horizontal ul.wizard_steps li:last-child a:before {
+    right: 50%;
+    width: 50%;
+    left: auto;
+}
+/**-------**/
+
+.wizard_verticle .stepContainer {
+    width: 80%;
+    float: left;
+    padding: 0 10px;
+}
+
+.form_wizard .stepContainer div.content {
+    display: block;
+    position: absolute;
+    float: left;
+    margin: 0;
+    padding: 5px;
+    font: normal 12px Verdana, Arial, Helvetica, sans-serif;
+    color: #5A5655;
+    height: 300px !important;
+    text-align: left;
+    overflow: auto;
+    z-index: 88;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    clear: both;
+}
+
+.actionBar {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    padding: 10px 5px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.actionBar .buttonDisabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: .65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.actionBar a {
+    margin: 0 3px;
+}
+/**-------**/
+
+.wizard_verticle .wizard_content {
+    width: 80%;
+    float: left;
+    padding-left: 20px;
+}
+
+.wizard_verticle ul.wizard_steps {
+    display: table;
+    list-style: none;
+    position: relative;
+    width: 20%;
+    float: left;
+    margin: 0 0 20px;
+}
+
+.wizard_verticle ul.wizard_steps li {
+    display: list-item;
+    text-align: center;
+}
+
+.wizard_verticle ul.wizard_steps li a {
+    height: 80px;
+}
+
+.wizard_verticle ul.wizard_steps li a:first-child {
+    margin-top: 20px;
+}
+
+.wizard_verticle ul.wizard_steps li a,
+.wizard_verticle ul.wizard_steps li:hover {
+    display: block;
+    position: relative;
+    -moz-opacity: 1;
+    filter: alpha(opacity: 100);
+    opacity: 1;
+    color: #666;
+}
+
+.wizard_verticle ul.wizard_steps li a:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background: #ccc;
+    top: 20px;
+    width: 4px;
+    z-index: 4;
+    left: 49%;
+}
+
+.wizard_verticle ul.wizard_steps li a.disabled .step_no {
+    background: #ccc;
+}
+
+.wizard_verticle ul.wizard_steps li a .step_no {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 100px;
+    display: block;
+    margin: 0 auto 5px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.wizard_verticle ul.wizard_steps li a.selected:before,
+.step_no {
+    background: #34495E;
+    color: #fff;
+}
+
+.wizard_verticle ul.wizard_steps li a.done:before,
+.wizard_verticle ul.wizard_steps li a.done .step_no {
+    background: #1ABB9C;
+    color: #fff;
+}
+
+.wizard_verticle ul.wizard_steps li:first-child a:before {
+    left: 49%;
+}
+
+.wizard_verticle ul.wizard_steps li:last-child a:before {
+    left: 49%;
+    left: auto;
+    width: 0;
+}
+/**-------**/
+/* *********  /form wizard  **************************** */
+/* *********  progressbar  **************************** */
+/*! bootstrap-progressbar v0.8.4 | Copyright (c) 2012-2014 Stephan Groß | MIT license | http://www.minddust.com */
+
+.progress_summary .progress {
+    margin: 5px 0 12px !important;
+}
+
+.progress_summary .row {
+    margin-bottom: 5px;
+}
+
+.progress_summary .row .col-xs-2 {
+    padding: 0
+}
+
+.progress_summary .more_info span {
+    text-align: right;
+    float: right;
+}
+
+.progress_summary .data span {
+    text-align: right;
+    float: right;
+}
+
+.progress_summary p {
+    margin-bottom: 3px;
+    width: 100%;
+}
+
+.progress_title .left {
+    float: left;
+    text-align: left;
+}
+
+.progress_title .right {
+    float: right;
+    text-align: right;
+    font-weight: 300;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+@keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+.progress {
+    border-radius: 0;
+    margin-bottom: 18px;
+}
+
+.progress.right .progress-bar {
+    float: right;
+    right: 0;
+}
+
+.progress.vertical {
+    width: 40px;
+}
+
+.progress.progress_sm {
+    border-radius: 0;
+    margin-bottom: 18px;
+    height: 10px !important;
+}
+
+.progress.progress_sm .progress-bar {
+    height: 10px !important;
+}
+
+.dashboard_graph p {
+    margin: 0 0 4px;
+}
+
+ul.verticle_bars {
+    width: 100%;
+}
+
+ul.verticle_bars li {
+    width: 23%;
+    height: 200px;
+    margin: 0;
+}
+
+.progress {
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    float: left;
+    width: 0%;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #428bca;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+}
+
+.progress-striped .progress-bar,
+.progress-bar-striped {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 40px 40px;
+}
+
+.progress.active .progress-bar,
+.progress-bar.active {
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -o-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite;
+}
+
+.progress-bar-success {
+    background-color: #26B99A;
+}
+
+.progress-striped .progress-bar-success {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-bar-info {
+    background-color: #3498DB;
+}
+
+.progress-striped .progress-bar-info {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-bar-warning {
+    background-color: #F39C12;
+}
+
+.progress-striped .progress-bar-warning {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-bar-danger {
+    background-color: #d9534f;
+}
+
+.progress-striped .progress-bar-danger {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress {
+    position: relative;
+}
+
+.progress .progress-bar {
+    position: absolute;
+    overflow: hidden;
+    line-height: 20px;
+}
+
+.progress .progressbar-back-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.progress .progressbar-front-text {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.progress.right .progress-bar {
+    right: 0;
+}
+
+.progress.right .progressbar-front-text {
+    position: absolute;
+    right: 0;
+}
+
+.progress.vertical {
+    width: 20px;
+    height: 100%;
+    float: left;
+    margin-right: 10px;
+}
+
+.progress.vertical.progress_wide {
+    width: 35px;
+}
+
+.progress.vertical.bottom {
+    position: relative;
+}
+
+.progress.vertical.bottom .progressbar-front-text {
+    position: absolute;
+    bottom: 0;
+}
+
+.progress.vertical .progress-bar {
+    width: 100%;
+    height: 0;
+    -webkit-transition: height 0.6s ease;
+    -o-transition: height 0.6s ease;
+    transition: height 0.6s ease;
+}
+
+.progress.vertical.bottom .progress-bar {
+    position: absolute;
+    bottom: 0;
+}
+/* *********  /progressbar  **************************** */
+
+/* *********  form design  **************************** */
+
+.editor.btn-toolbar {
+    zoom: 1;
+    background: #F7F7F7;
+    margin: 5px 2px;
+    padding: 3px 0;
+    border: 1px solid #EFEFEF;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.ln_solid {
+    border-top: 1px solid #e5e5e5;
+    color: #ffffff;
+    background-color: #ffffff;
+    height: 1px;
+    margin: 20px 0;
+}
+
+span.section {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+} 
+
+.form-control {
+    border-radius: 0;
+    line-height: 30px;
+    width: 100%;
+}
+
+.form-horizontal .control-label {
+    padding-top: 8px
+}
+
+.form-control:focus {
+    border-color: #CCD0D7;
+    box-shadow: none !important;
+}
+
+legend {
+    font-size: 18px;
+    color: inherit;
+}
+
+.checkbox {}
+
+.form-horizontal .form-group {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.form-control-feedback {
+    margin-top: 8px;
+    height: 23px;
+    color: #bbb;
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.form-control-feedback.left {
+    border-right: 1px solid #ccc;
+    left: 13px;
+}
+
+.form-control-feedback.right {
+    border-left: 1px solid #ccc;
+    right: 13px;
+}
+
+.form-control.has-feedback-left {
+    padding-left: 45px;
+}
+
+.form-control.has-feedback-right {
+    padding-right: 45px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.validate {
+    margin-top: 10px;
+}
+
+.invalid-form-error-message {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.invalid-form-error-message.filled {
+    border-left: 2px solid #E74C3C;
+}
+
+p.parsley-success {
+    color: #468847;
+    background-color: #DFF0D8;
+    border: 1px solid #D6E9C6;
+}
+
+p.parsley-error {
+    color: #B94A48;
+    background-color: #F2DEDE;
+    border: 1px solid #EED3D7;
+}
+
+ul.parsley-errors-list {
+    list-style: none;
+    color: #E74C3C;
+    padding-left: 0;
+}
+
+input.parsley-error,
+textarea.parsley-error,
+select.parsley-error {
+    background: #FAEDEC;
+    border: 1px solid #E85445;
+}
+
+.btn-group .parsley-errors-list {
+    display: none;
+}
+
+.bad input,
+.bad select,
+.bad textarea {
+    border: 1px solid #CE5454;
+    box-shadow: 0 0 4px -2px #CE5454;
+    position: relative;
+    left: 0;
+    -moz-animation: .7s 1 shake linear;
+    -webkit-animation: 0.7s 1 shake linear;
+}
+
+.item input,
+.item textarea {
+    -webkit-transition: 0.42s;
+    -moz-transition: 0.42s;
+    transition: 0.42s;
+}
+/* alerts (when validation fails) */
+
+.item .alert {
+    float: left;
+    margin: 0 0 0 20px;
+    padding: 3px 10px;
+    color: #FFF;
+    border-radius: 3px 4px 4px 3px;
+    background-color: #CE5454;
+    max-width: 170px;
+    white-space: pre;
+    position: relative;
+    left: -15px;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.15s ease-out;
+}
+
+.item .alert::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-color: transparent #CE5454 transparent transparent;
+    border-style: solid;
+    border-width: 11px 7px;
+    position: absolute;
+    left: -13px;
+    top: 1px;
+}
+
+.item.bad .alert {
+    left: 0;
+    opacity: 1;
+}
+/* ***** dropzone ****** */
+
+.dropzone,
+.dropzone * {
+    box-sizing: border-box;
+}
+
+.dropzone {
+    min-height: 150px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    background: white;
+    padding: 54px 54px;
+}
+
+.dropzone.dz-clickable {
+    cursor: pointer;
+}
+
+.dropzone.dz-clickable * {
+    cursor: default;
+}
+
+.dropzone.dz-clickable .dz-message,
+.dropzone.dz-clickable .dz-message * {
+    cursor: pointer;
+}
+
+.dropzone.dz-started .dz-message {
+    display: none;
+}
+
+.dropzone.dz-drag-hover {
+    border-style: solid;
+}
+
+.dropzone.dz-drag-hover .dz-message {
+    opacity: 0.5;
+}
+
+.dropzone .dz-message {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.dropzone .dz-preview {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 16px;
+    min-height: 100px;
+}
+
+.dropzone .dz-preview:hover {
+    z-index: 1000;
+}
+
+.dropzone .dz-preview:hover .dz-details {
+    opacity: 1;
+}
+
+.dropzone .dz-preview.dz-file-preview .dz-image {
+    border-radius: 20px;
+    background: #999;
+    background: linear-gradient(to bottom, #eee, #ddd);
+}
+
+.dropzone .dz-preview.dz-file-preview .dz-details {
+    opacity: 1;
+}
+
+.dropzone .dz-preview.dz-image-preview {
+    background: white;
+}
+
+.dropzone .dz-preview.dz-image-preview .dz-details {
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+
+.dropzone .dz-preview .dz-remove {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    border: none;
+}
+
+.dropzone .dz-preview .dz-remove:hover {
+    text-decoration: underline;
+}
+
+.dropzone .dz-preview:hover .dz-details {
+    opacity: 1;
+}
+
+.dropzone .dz-preview .dz-details {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    font-size: 13px;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 2em 1em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+    line-height: 150%;
+}
+
+.dropzone .dz-preview .dz-details .dz-size {
+    margin-bottom: 1em;
+    font-size: 16px;
+}
+
+.dropzone .dz-preview .dz-details .dz-filename {
+    white-space: nowrap;
+}
+
+.dropzone .dz-preview .dz-details .dz-filename:hover span {
+    border: 1px solid rgba(200, 200, 200, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dropzone .dz-preview .dz-details .dz-filename:not(:hover) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropzone .dz-preview .dz-details .dz-filename:not(:hover) span {
+    border: 1px solid transparent;
+}
+
+.dropzone .dz-preview .dz-details .dz-filename span,
+.dropzone .dz-preview .dz-details .dz-size span {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0 0.4em;
+    border-radius: 3px;
+}
+
+.dropzone .dz-preview:hover .dz-image img {
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+}
+
+.dropzone .dz-preview .dz-image {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    display: block;
+    z-index: 10;
+}
+
+.dropzone .dz-preview .dz-image img {
+    display: block;
+}
+
+.dropzone .dz-preview.dz-success .dz-success-mark {
+    -webkit-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+    animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.dropzone .dz-preview.dz-error .dz-error-mark {
+    opacity: 1;
+    -webkit-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+    animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.dropzone .dz-preview .dz-success-mark,
+.dropzone .dz-preview .dz-error-mark {
+    pointer-events: none;
+    opacity: 0;
+    z-index: 500;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin-left: -27px;
+    margin-top: -27px;
+}
+
+.dropzone .dz-preview .dz-success-mark svg,
+.dropzone .dz-preview .dz-error-mark svg {
+    display: block;
+    width: 54px;
+    height: 54px;
+}
+
+.dropzone .dz-preview.dz-processing .dz-progress {
+    opacity: 1;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.dropzone .dz-preview.dz-complete .dz-progress {
+    opacity: 0;
+    -webkit-transition: opacity 0.4s ease-in;
+    -moz-transition: opacity 0.4s ease-in;
+    -ms-transition: opacity 0.4s ease-in;
+    -o-transition: opacity 0.4s ease-in;
+    transition: opacity 0.4s ease-in;
+}
+
+.dropzone .dz-preview:not(.dz-processing) .dz-progress {
+    -webkit-animation: pulse 6s ease infinite;
+    -moz-animation: pulse 6s ease infinite;
+    -ms-animation: pulse 6s ease infinite;
+    -o-animation: pulse 6s ease infinite;
+    animation: pulse 6s ease infinite;
+}
+
+.dropzone .dz-preview .dz-progress {
+    opacity: 1;
+    z-index: 1000;
+    pointer-events: none;
+    position: absolute;
+    height: 16px;
+    left: 50%;
+    top: 50%;
+    margin-top: -8px;
+    width: 80px;
+    margin-left: -40px;
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-transform: scale(1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dropzone .dz-preview .dz-progress .dz-upload {
+    background: #333;
+    background: linear-gradient(to bottom, #666, #444);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    -webkit-transition: width 300ms ease-in-out;
+    -moz-transition: width 300ms ease-in-out;
+    -ms-transition: width 300ms ease-in-out;
+    -o-transition: width 300ms ease-in-out;
+    transition: width 300ms ease-in-out;
+}
+
+.dropzone .dz-preview.dz-error .dz-error-message {
+    display: block;
+}
+
+.dropzone .dz-preview.dz-error:hover .dz-error-message {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dropzone .dz-preview .dz-error-message {
+    pointer-events: none;
+    z-index: 1000;
+    position: absolute;
+    display: block;
+    display: none;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+    font-size: 13px;
+    top: 130px;
+    left: -10px;
+    width: 140px;
+    background: #be2626;
+    background: linear-gradient(to bottom, #be2626, #a92222);
+    padding: 0.5em 1.2em;
+    color: white;
+}
+
+.dropzone .dz-preview .dz-error-message:after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 64px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #be2626;
+}
+/* ***** /dropzone ****** */
+.inl-bl{
+    display:inline-block;
+}
+
+.well .markup-heading{
+    
+}
+.well .markup{
+    background: #fff;
+    color: #777;
+    position: relative;
+    padding: 45px 15px 15px;
+    margin: 15px 0 0 0;
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    box-shadow: none;
+}
+
+.well .markup::after{
+    content: "Example";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #bbb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* ***** autocomplete ***** */
+
+.autocomplete-suggestions {
+    border: 1px solid #e4e4e4;
+    background: #F4F4F4;
+    cursor: default;
+    overflow: auto;
+}
+
+.autocomplete-suggestion {
+    padding: 2px 5px;
+    font-size: 1.2em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.autocomplete-selected {
+    background: #f0f0f0;
+}
+
+.autocomplete-suggestions strong {
+    font-weight: normal;
+    color: #3399ff;
+    font-weight: bolder;
+}
+/* ***** /autocomplete *****/
+/* ***** buttons ********/
+
+.btn.btn-app {
+    position: relative;
+    padding: 15px 5px;
+    margin: 0 0 10px 10px;
+    min-width: 80px;
+    height: 60px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    text-align: center;
+    color: #666;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    font-size: 12px;
+}
+
+.btn.btn-app > .fa,
+.btn.btn-app > .glyphicon,
+.btn.btn-app > .ion {
+    font-size: 20px;
+    display: block;
+}
+
+.btn.btn-app:hover {
+    background: #f4f4f4;
+    color: #444;
+    border-color: #aaa;
+}
+
+.btn.btn-app:active,
+.btn.btn-app:focus {
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn.btn-app > .badge {
+    position: absolute;
+    top: -3px;
+    right: -10px;
+    font-size: 10px;
+    font-weight: 400;
+}
+/* ***** /buttons *******/
+/* *********  /form design  **************************** */

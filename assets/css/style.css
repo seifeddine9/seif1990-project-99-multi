@@ -1654,3 +1654,103 @@ p.ask-dispo{
 
 
  }
+ 
+ 
+ .easyWizardSteps {
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border-bottom: 0px solid rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  background: #7A868F;
+}
+.easyWizardSteps li {
+  font-size: 18px;
+  font-family: "Open Sans";
+  display: inline-block;
+  padding: 10px 20px;
+  color: #eee;
+  border-right: 1px solid rgba(0,0,0,0.1);
+  margin-right: 0px;
+}
+.easyWizardSteps li:last-child {
+  border-right: 0px;
+}
+.easyWizardSteps li span {
+  font-size: 15px;
+  padding: 2px 9px;
+  border-radius: 50%;
+  margin-top: -5px;
+  color: #eee;
+  font-weight: 700;
+  margin-right: 5px;
+  border: 2px solid #eee;
+}
+.easyWizardSteps li.current span {
+  border: 2px solid #68C39F;
+  color: #68C39F;
+}
+.easyWizardSteps li.current {
+  color: #38464A;
+  background: #fff;
+}
+.easyWizardButtons {
+  overflow: hidden;
+  padding: 10px;
+}
+.easyWizardButtons button,
+.easyWizardButtons .submit {
+  cursor: pointer;
+}
+.easyWizardButtons .prev {
+  float: left;
+}
+.easyWizardButtons .next,
+.easyWizardButtons .submit {
+  float: right;
+}
+.notes {
+  padding: 15px;
+  border: 1px dashed #ddd;
+}
+section.step {
+  padding: 0 30px;
+}
+.the-notes {
+  padding: 15px 15px 15px 30px;
+  border-left: 4px solid #909090;
+  margin-bottom: 20px;
+}
+.the-notes.default {
+  background: #fff;
+}
+.the-notes.success {
+  background: #fff;
+  border-left-color: #65BD77;
+}
+.the-notes.warning {
+  background: #fff;
+  border-left-color: #F7CB17;
+}
+.the-notes.danger {
+  background: #fff;
+  border-left-color: #D9534F;
+}
+.the-notes.info {
+  background: #fff;
+  border-left-color: #4393D8;
+}
+.the-notes.success h4 {
+  color: #65BD77;
+}
+.the-notes.warning h4 {
+  color: #F7CB17;
+}
+.the-notes.danger h4 {
+  color: #D9534F;
+}
+.the-notes.inf h4 {
+  color: #4393D8;
+}
