@@ -4,4 +4,5 @@ $(function() {
 		submitButtonClass: 'btn btn-primary',
 		
 	});
+        $('#myWizard').easyWizard('goToStep', 2);
 });

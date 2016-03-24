@@ -448,18 +448,20 @@ class User extends CI_Controller {
             $post_data = $_POST['postData'];
             $customer = $_POST['post_data']['customer'];
 
+            $id_tenant = $this->session->userdata('id_tenant');
+            $customer['id_tenant'] = $id_tenant;
             $customer['id'] = $this->customers_model->add($customer);
             
             
             
-            $this->load->library('session');
+            
             $this->session->set_userdata('user_id', $customer['id']);
             $this->session->set_userdata('user_email', $customer['email']);
             $this->session->set_userdata('role_slug', DB_SLUG_CUSTOMER);
             $this->session->set_userdata('first_name', $customer['first_name']);
             $this->session->set_userdata('last_name', $customer['last_name']);
             
-            $id_tenant = $this->session->userdata('id_tenant');
+            
 
             $this->load->library('notifications');
             $company_settings = array(

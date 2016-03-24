@@ -20,7 +20,7 @@
 				'buttonsClass' : '',
 				'prevButton' : '&laquo; Back',
 				'nextButton' : 'Next &raquo;',
-				'debug' : false,
+				'debug' : true,
 				'submitButton': true,
 				'submitButtonText': 'Submit',
 				'submitButtonClass': '',

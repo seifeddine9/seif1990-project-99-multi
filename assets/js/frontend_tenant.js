@@ -31,8 +31,12 @@ var FrontendTenant = {
         }
 
 
-        $('#wizard').smartWizard();
-        
+        $('#myWizard').easyWizard({
+            buttonsClass: 'btn btn-default',
+            submitButtonClass: 'btn btn-primary finish',
+//            
+           
+        });
         /**
          function onFinish() {
          $('#wizard').smartWizard('showMessage', 'Finish Clicked');
@@ -64,18 +68,111 @@ var FrontendTenant = {
      */
     bindEventHandlers: function () {
 
-        function onFinishCallback() {
-            $('#wizard').smartWizard('showMessage', 'Finish Clicked');
-            alert('Finish Clicked');
-            console.log('holloo');
-        }
 
 
 
+//        $(document).on('click', '.next', function (e) {
+//            $('.form-group .required').each(function () {
+//                if ($(this).val() === '') {
+//                    $(this).parents('.form-group').addClass('has-error');
+//                    missingFields = true;
+//                    
+//                }
+//
+//            });
+//           e.preventDefault();
+//        });
+        
+        
+        $('.finish').click(function (event) {
+            
+            event.preventDefault();
+
+            var missingFields = false;
+            $('.form-group .required').each(function () {
+                if ($(this).val() === '') {
+                    $(this).parents('.form-group').addClass('has-error');
+                    missingFields = true;
+                    event.preventDefault();
+                }
+
+            });
+//            if (missingFields === true)
+//            {
+//                return false;
+//            }
 
 
 
+            var formData = new Object();
+            formData['customer'] = {
+                'username': $('#inputUsername').val(),
+                'last_name': $('#inputNom').val(),
+                'first_name': $('#inputPrenom').val(),
+                'password': $('#inputPassword').val(),
+                'email': $('#inputEmail').val(),
+                'phone_number': $("#inputPhoneNumber").intlTelInput("getNumber"),
+                'address': $('#inputAdress').val(),
+                'city': $('#inputCity').val()
 
+            };
+            formData['services'] = {
+                'name': $('#inputServicename').val(),
+                'duration': $('#inputDuration').val(),
+                'price': $('#inputPrice').val(),
+                'categorie': $('#inputCategoriename').val()
+
+            };
+            formData['provider'] = {
+                'role': $('#inputPersonnelType').val(),
+                'username': $('#inputPersonnelUsername').val(),
+                'last_name': $('#inputPersonnelNom').val(),
+                'first_name': $('#inputPersonnelPrenom').val(),
+                'password': $('#inputPersonnelPassword').val(),
+                'email': $('#inputPersonnelEmail').val(),
+                'phone_number': $("#inputPersonnelPhoneNumber").intlTelInput("getNumber"),
+                'address': $('#inputPersonnelAdress').val(),
+                'city': $('#inputPersonnelCity').val()
+
+            };
+            formData['settings'] = {
+                'company_name': $('#inputNomSociete').val(),
+                'company_email': $('#inputEmailSociete').val(),
+                'company_link': $('#inputLinkSociete').val(),
+                'company_domain': $('#inputOccupationSociete').val()
+
+            };
+            console.log(formData);
+//            var postData = {
+//                'csrfToken': GlobalVariables.csrfToken,
+//                'post_data': formData
+//            };
+//            var postUrl = GlobalVariables.baseUrl + 'index.php/user/inscription';
+//
+//            $('.alert.inscrit').addClass('hidden');
+//
+//            $.post(postUrl, postData, function (response) {
+//                ////////////////////////////////////////////////////////////
+//
+//                console.log(response);
+//
+//                if (response == GlobalVariables.AJAX_SUCCESS) {
+//                    window.location.href = GlobalVariables.baseUrl + 'index.php/home';
+//                    ;
+//                } else {
+//                    json = JSON.parse(response.exceptions);
+//                    $('.alert').text(json.message);
+//                    $('.alert').removeClass('hidden')
+//                            .addClass('alert-danger');
+//
+//                }
+//
+//                ////////////////////////////////////////////////////////////
+//            }, 'json');
+
+
+
+        });
     }
 
 
