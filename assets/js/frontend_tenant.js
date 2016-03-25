@@ -33,10 +33,13 @@ var FrontendTenant = {
 
         $('#myWizard').easyWizard({
             buttonsClass: 'btn btn-default',
-            submitButtonClass: 'btn btn-primary finish',
+            submitButtonClass: 'btn btn-primary finish'
 //            
-           
+
         });
+
+
+
         /**
          function onFinish() {
          $('#wizard').smartWizard('showMessage', 'Finish Clicked');
@@ -82,21 +85,67 @@ var FrontendTenant = {
 //            });
 //           e.preventDefault();
 //        });
-        
-        
+//        var k = 1;
+//
+//
+//
+//
+//        $('#myWizard .next').attr("id", k);
+//
+//        $('#' + k).click(function (e) {
+//
+//
+//            missingFields = false;
+//            //alert('hello');
+//            $('.form-group .required').each(function () {
+//                if ($(this).val() === '') {
+//                    $(this).parents('.form-group').addClass('has-error');
+//                    missingFields = true;
+//                    e.preventDefault();
+//
+//                }
+//
+//            });
+//            if (missingFields === true) {
+//                e.preventDefault();
+//                //$('#myWizard').easyWizard('prevStep');
+//            }
+//        });
+//
+//
+//
+//
+//        $('#myWizard .next').bind('click', function (e) {
+//            k++;
+//            console.log(k);
+//            $('#myWizard .next').attr("id", k);
+//            //e.preventDefault();
+//
+//        });
+//        $('#myWizard .prev').bind('click', function (e) {
+//            k--;
+//            $('#myWizard .next').attr("id", k);
+//            //e.preventDefault();
+//
+//        });
+
+
+
+
         $('.finish').click(function (event) {
-            
+
             event.preventDefault();
 
-            var missingFields = false;
-            $('.form-group .required').each(function () {
-                if ($(this).val() === '') {
-                    $(this).parents('.form-group').addClass('has-error');
-                    missingFields = true;
-                    event.preventDefault();
-                }
-
-            });
+//            var missingFields = false;
+//            $('.form-group .required').each(function () {
+//                if ($(this).val() === '') {
+//                    $(this).parents('.form-group').addClass('has-error');
+//                    missingFields = true;
+//                    event.preventDefault();
+//                    //$('#myWizard').easyWizard('goToStep', 2);
+//                }
+//
+//            });
 //            if (missingFields === true)
 //            {
 //                return false;
@@ -105,7 +154,7 @@ var FrontendTenant = {
 
 
             var formData = new Object();
-            formData['customer'] = {
+            formData['admin'] = {
                 'username': $('#inputUsername').val(),
                 'last_name': $('#inputNom').val(),
                 'first_name': $('#inputPrenom').val(),
@@ -143,32 +192,33 @@ var FrontendTenant = {
 
             };
             console.log(formData);
-//            var postData = {
-//                'csrfToken': GlobalVariables.csrfToken,
-//                'post_data': formData
-//            };
-//            var postUrl = GlobalVariables.baseUrl + 'index.php/user/inscription';
-//
-//            $('.alert.inscrit').addClass('hidden');
-//
-//            $.post(postUrl, postData, function (response) {
-//                ////////////////////////////////////////////////////////////
-//
-//                console.log(response);
-//
-//                if (response == GlobalVariables.AJAX_SUCCESS) {
-//                    window.location.href = GlobalVariables.baseUrl + 'index.php/home';
-//                    ;
-//                } else {
-//                    json = JSON.parse(response.exceptions);
-//                    $('.alert').text(json.message);
-//                    $('.alert').removeClass('hidden')
-//                            .addClass('alert-danger');
-//
-//                }
-//
-//                ////////////////////////////////////////////////////////////
-//            }, 'json');
+            var postData = {
+                'csrfToken': GlobalVariables.csrfToken,
+                'admin': JSON.stringify(formData['admin']),
+                'settings':JSON.stringify(formData['settings'])
+            };
+            var postUrl = GlobalVariables.baseUrl + 'index.php/new_tenant/ajax_add_tenant';
+
+            //$('.alert.inscrit').addClass('hidden');
+
+            $.post(postUrl, postData, function (response) {
+                ////////////////////////////////////////////////////////////
+
+                console.log(response);
+
+                if (response == GlobalVariables.AJAX_SUCCESS) {
+                    window.location.href = GlobalVariables.baseUrl + 'index.php/backend';
+                    ;
+                } else {
+                    json = JSON.parse(response.exceptions);
+                    $('.alert').text(json.message);
+                    $('.alert').removeClass('hidden')
+                            .addClass('alert-danger');
+
+                }
+
+                ////////////////////////////////////////////////////////////
+            }, 'json');
 
 
 

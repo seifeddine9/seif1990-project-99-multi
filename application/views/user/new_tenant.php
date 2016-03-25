@@ -24,7 +24,15 @@ src="<?php echo $this->config->item('base_url'); ?>assets/ext/intl-tel-input/int
     type="text/css"
     href="<?php echo $this->config->item('base_url'); ?>assets/css/style-responsive.css" rel="stylesheet" /> 
 
+<style type="text/css">
 
+
+
+    .row{
+        padding-left: 50px;
+        padding-right:  50px;
+    }
+</style>
 
 
 
@@ -95,19 +103,19 @@ src="<?php echo $this->config->item('base_url'); ?>assets/ext/intl-tel-input/int
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for="inputOccupationSociete">Domaine de travail</label>
-                                            <input type="text" id="inputOccupationSociete" placeholder="Domaine de travail" class="form-control">
+                                            <input type="text" id="inputOccupationSociete" placeholder="Domaine de travail" class="required form-control">
                                         </div>
                                         <div class="form-group">
                                             <label for="inputNomSociete">Nom Société</label>
-                                            <input type="text" id="inputNomSociete" placeholder="Nom société" class="form-control">
+                                            <input type="text" id="inputNomSociete" placeholder="Nom société" class="required form-control">
                                         </div>
                                         <div class="form-group">
                                             <label for="inputEmailSociete">Adresse email Société</label>
-                                            <input type="text" id="inputEmailSociete" placeholder="Adresse email Société" class="form-control">
+                                            <input type="text" id="inputEmailSociete" placeholder="Adresse email Société" class="required form-control">
                                         </div>
                                         <div class="form-group">
                                             <label for="inputLinkSociete">Lien Société</label>
-                                            <input type="url" id="inputLinkSociete" placeholder="Lien Société" class="form-control">
+                                            <input type="url" id="inputLinkSociete" placeholder="Lien Société" class="required form-control">
                                         </div>
 
                                     </div>
@@ -137,19 +145,19 @@ src="<?php echo $this->config->item('base_url'); ?>assets/ext/intl-tel-input/int
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for="inputCategoriename">Nom du catégorie</label>
-                                            <input type="text" id="inputCategoriename" placeholder="Nom du catégorie" class="form-control">
+                                            <input type="text" id="inputCategoriename" placeholder="Nom du catégorie" class="required form-control">
                                         </div>
                                         <div class="form-group">
                                             <label for="inputServicename">Nom du service</label>
-                                            <input type="text" id="inputServicename" placeholder="Nom du service" class="form-control">
+                                            <input type="text" id="inputServicename" placeholder="Nom du service" class="required form-control">
                                         </div>
                                         <div class="form-group">
                                             <label for="inputDuration">Duration</label>
-                                            <input type="Number" id="inputDuration" placeholder="Duration par minutes" class="form-control">
+                                            <input type="Number" id="inputDuration" placeholder="Duration par minutes" class="required form-control">
                                         </div>
                                         <div class="form-group">
                                             <label for="inputPrice">Prix du service</label>
-                                            <input type="Number" id="inputPrice" placeholder="Prix du service" class="form-control" step="0.01" min="0.01">
+                                            <input type="Number" id="inputPrice" placeholder="Prix du service" class="required form-control" step="0.01" min="0.01">
                                         </div>
 
                                     </div>
@@ -241,12 +249,22 @@ src="<?php echo $this->config->item('base_url'); ?>assets/ext/intl-tel-input/int
 </div>
 
 <script type="text/javascript">
-    
+
     $(document).ready(function () {
-                FrontendTenant.initialize(true);
 
+        
+        FrontendTenant.initialize(true);
+    });
+    var GlobalVariables = {
+            'csrfToken': <?php echo json_encode($this->security->get_csrf_hash()); ?>,
+            'baseUrl': <?php echo '"' . $base_url . '"'; ?>,
+            'destUrl': <?php echo '"' . $dest_url . '"'; ?>,
+            'destUrlCustomer': <?php echo '"' . $dest_url_customer . '"'; ?>,
+            'AJAX_SUCCESS': 'SUCCESS',
+            'AJAX_FAILURE': 'FAILURE'
+        };
 
-            });
+    
     $("#inputPhoneNumber").intlTelInput({
         nationalMode: true,
         utilsScript: "<?php echo $this->config->item('base_url'); ?>assets/ext/intl-tel-input/utils.js", // just for formatting/placeholders etc
@@ -281,8 +299,8 @@ src="<?php echo $this->config->item('base_url'); ?>assets/ext/prettify/prettify.
 src="<?php echo $this->config->item('base_url'); ?>assets/ext/jquery-wizard/jquery.easyWizard.js"></script>
 
 <script type="text/javascript"
-    src="<?php echo $base_url; ?>assets/js/frontend_tenant.js"></script>
+src="<?php echo $base_url; ?>assets/js/frontend_tenant.js"></script>
 <!--<script
-    type="text/javascript"
+type="text/javascript"
 src="<?php echo $this->config->item('base_url'); ?>assets/ext/pages/form-wizard.js"></script>		
- 	            -->
+-->

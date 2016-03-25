@@ -260,8 +260,13 @@ class Appointments_Model extends CI_Model {
     /**
      * get appointment number
      * */
-    public function get_count() {
-        return $this->db->count_all('ea_appointments');
+    public function get_count($id_tenant) {
+        
+        return $this->db
+                        ->select('*')
+                        ->from('ea_appointments')
+                        ->where('ea_appointments.id_tenant', $id_tenant)
+                        ->get()->num_rows();
     }
 
     /**
@@ -365,7 +370,7 @@ class Appointments_Model extends CI_Model {
     /**
      * get filtered projected appointment number
      * */
-    public function get_count_projected_filter($date_debut, $date_fin,$id_tenant) {
+    public function get_count_projected_filter($date_debut, $date_fin, $id_tenant) {
         $date = date('Y-m-d H:i:s');
         $num_rows = $this->db
                         ->select_sum('ea_services.price', 'total')
