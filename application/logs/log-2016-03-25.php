@@ -433,3 +433,233 @@ ERROR - 2016-03-25 16:45:54 --> Severity: Warning  --> Missing argument 4 for Pr
 ERROR - 2016-03-25 16:45:54 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 502
 ERROR - 2016-03-25 16:45:54 --> Severity: Warning  --> Missing argument 4 for Providers_Model::set_setting(), called in C:\xampp\htdocs\mcube_multi\application\models\providers_model.php on line 528 and defined C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 500
 ERROR - 2016-03-25 16:45:54 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 502
+ERROR - 2016-03-25 17:00:42 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 17:00:42 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 17:01:30 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 17:01:30 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 17:01:54 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 17:01:54 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 17:02:03 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 17:02:03 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 17:02:20 --> Severity: Notice  --> Undefined index: password C:\xampp\htdocs\mcube_multi\application\models\customers_model.php 122
+ERROR - 2016-03-25 17:02:23 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 17:02:23 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 17:02:29 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 17:02:29 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 17:05:01 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 17:05:01 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 17:05:23 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 17:05:23 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 17:05:57 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 17:05:57 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 17:06:09 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 17:06:09 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 17:06:22 --> Severity: Warning  --> Missing argument 4 for Providers_Model::set_setting(), called in C:\xampp\htdocs\mcube_multi\application\models\providers_model.php on line 528 and defined C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 500
+ERROR - 2016-03-25 17:06:22 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 502
+ERROR - 2016-03-25 17:06:22 --> Severity: Warning  --> Missing argument 4 for Providers_Model::set_setting(), called in C:\xampp\htdocs\mcube_multi\application\models\providers_model.php on line 528 and defined C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 500
+ERROR - 2016-03-25 17:06:22 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 502
+ERROR - 2016-03-25 17:06:23 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 17:06:23 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 17:06:51 --> Severity: Warning  --> Missing argument 4 for Providers_Model::set_setting(), called in C:\xampp\htdocs\mcube_multi\application\models\providers_model.php on line 528 and defined C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 500
+ERROR - 2016-03-25 17:06:51 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 502
+ERROR - 2016-03-25 17:06:51 --> Severity: Warning  --> Missing argument 4 for Providers_Model::set_setting(), called in C:\xampp\htdocs\mcube_multi\application\models\providers_model.php on line 528 and defined C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 500
+ERROR - 2016-03-25 17:06:51 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 502
+ERROR - 2016-03-25 17:07:00 --> Severity: Warning  --> Missing argument 4 for Providers_Model::set_setting(), called in C:\xampp\htdocs\mcube_multi\application\models\providers_model.php on line 528 and defined C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 500
+ERROR - 2016-03-25 17:07:00 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 502
+ERROR - 2016-03-25 17:07:00 --> Severity: Warning  --> Missing argument 4 for Providers_Model::set_setting(), called in C:\xampp\htdocs\mcube_multi\application\models\providers_model.php on line 528 and defined C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 500
+ERROR - 2016-03-25 17:07:00 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 502
+ERROR - 2016-03-25 17:12:44 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:12:44 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:12:44 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:12:44 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:12:46 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:12:46 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:12:46 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:12:46 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:12:46 --> Severity: Notice  --> Undefined variable: dest_url C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 163
+ERROR - 2016-03-25 17:12:46 --> Severity: Notice  --> Undefined variable: dest_url_customer C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 164
+ERROR - 2016-03-25 17:12:59 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:12:59 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:12:59 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:12:59 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:12:59 --> Severity: Notice  --> Undefined variable: dest_url C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 163
+ERROR - 2016-03-25 17:12:59 --> Severity: Notice  --> Undefined variable: dest_url_customer C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 164
+ERROR - 2016-03-25 17:13:21 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:13:21 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:13:21 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:13:21 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:13:21 --> Severity: Notice  --> Undefined variable: dest_url C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 261
+ERROR - 2016-03-25 17:13:21 --> Severity: Notice  --> Undefined variable: dest_url_customer C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 262
+ERROR - 2016-03-25 17:13:42 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:13:42 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:13:42 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:13:42 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:13:42 --> Severity: Notice  --> Undefined variable: dest_url C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 203
+ERROR - 2016-03-25 17:13:42 --> Severity: Notice  --> Undefined variable: dest_url_customer C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 204
+ERROR - 2016-03-25 17:14:10 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:14:10 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:14:10 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:14:10 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:14:10 --> Severity: Notice  --> Undefined variable: dest_url C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 163
+ERROR - 2016-03-25 17:14:10 --> Severity: Notice  --> Undefined variable: dest_url_customer C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 164
+ERROR - 2016-03-25 17:14:32 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:14:32 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:14:32 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:14:32 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:14:34 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:14:34 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:14:34 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:14:34 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:14:34 --> Severity: Notice  --> Undefined variable: dest_url C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 203
+ERROR - 2016-03-25 17:14:34 --> Severity: Notice  --> Undefined variable: dest_url_customer C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 204
+ERROR - 2016-03-25 17:16:12 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:16:12 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:16:12 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:16:12 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:16:12 --> Severity: Notice  --> Undefined variable: dest_url C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 163
+ERROR - 2016-03-25 17:16:12 --> Severity: Notice  --> Undefined variable: dest_url_customer C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 164
+ERROR - 2016-03-25 17:16:55 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:16:55 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:16:55 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:16:55 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:16:55 --> Severity: Notice  --> Undefined variable: dest_url C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 163
+ERROR - 2016-03-25 17:16:55 --> Severity: Notice  --> Undefined variable: dest_url_customer C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 164
+ERROR - 2016-03-25 17:17:04 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:17:04 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:17:04 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:17:04 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:17:04 --> Severity: Notice  --> Undefined variable: dest_url C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 163
+ERROR - 2016-03-25 17:17:04 --> Severity: Notice  --> Undefined variable: dest_url_customer C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 164
+ERROR - 2016-03-25 17:17:10 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:17:10 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:17:10 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:17:10 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:17:10 --> Severity: Notice  --> Undefined variable: dest_url C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 163
+ERROR - 2016-03-25 17:17:10 --> Severity: Notice  --> Undefined variable: dest_url_customer C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 164
+ERROR - 2016-03-25 17:18:40 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:18:40 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:18:40 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:18:40 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:18:40 --> Severity: Notice  --> Undefined variable: dest_url C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 163
+ERROR - 2016-03-25 17:18:40 --> Severity: Notice  --> Undefined variable: dest_url_customer C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 164
+ERROR - 2016-03-25 17:23:47 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:23:47 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:23:47 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:23:47 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:23:52 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:23:52 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:23:52 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:23:52 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:23:52 --> Severity: Notice  --> Undefined variable: dest_url C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 163
+ERROR - 2016-03-25 17:23:52 --> Severity: Notice  --> Undefined variable: dest_url_customer C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 164
+ERROR - 2016-03-25 17:26:40 --> Severity: Notice  --> Undefined index: dest_url C:\xampp\htdocs\mcube_multi\application\controllers\user.php 240
+ERROR - 2016-03-25 17:26:40 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:26:40 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:26:40 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:26:40 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:26:45 --> Severity: Notice  --> Undefined variable: active_menu C:\xampp\htdocs\mcube_multi\application\views\user\header.php 160
+ERROR - 2016-03-25 17:26:45 --> Severity: Notice  --> Undefined variable: active_menu C:\xampp\htdocs\mcube_multi\application\views\user\header.php 163
+ERROR - 2016-03-25 17:26:45 --> Severity: Notice  --> Undefined variable: active_menu C:\xampp\htdocs\mcube_multi\application\views\user\header.php 166
+ERROR - 2016-03-25 17:26:48 --> Severity: Notice  --> Undefined variable: active_menu C:\xampp\htdocs\mcube_multi\application\views\user\header.php 160
+ERROR - 2016-03-25 17:26:48 --> Severity: Notice  --> Undefined variable: active_menu C:\xampp\htdocs\mcube_multi\application\views\user\header.php 163
+ERROR - 2016-03-25 17:26:48 --> Severity: Notice  --> Undefined variable: active_menu C:\xampp\htdocs\mcube_multi\application\views\user\header.php 166
+ERROR - 2016-03-25 17:26:48 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\user\services.php on line 179 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 17:26:48 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 17:26:48 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\user\services.php on line 404 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 17:26:48 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 17:31:30 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:31:30 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:31:30 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:31:30 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:31:33 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:31:33 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:31:33 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:31:33 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:31:33 --> Severity: Notice  --> Undefined variable: dest_url C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 163
+ERROR - 2016-03-25 17:31:33 --> Severity: Notice  --> Undefined variable: dest_url_customer C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 164
+ERROR - 2016-03-25 17:32:50 --> Severity: Notice  --> Undefined index: settings C:\xampp\htdocs\mcube_multi\application\models\admins_model.php 102
+ERROR - 2016-03-25 17:32:50 --> Severity: Notice  --> Undefined index: settings C:\xampp\htdocs\mcube_multi\application\models\admins_model.php 139
+ERROR - 2016-03-25 17:32:52 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 17:32:52 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 17:34:08 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:34:08 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:34:08 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:34:08 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:34:28 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 17:34:28 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 17:34:28 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 17:34:28 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 17:34:28 --> Severity: Notice  --> Undefined variable: dest_url C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 163
+ERROR - 2016-03-25 17:34:28 --> Severity: Notice  --> Undefined variable: dest_url_customer C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 164
+ERROR - 2016-03-25 18:03:57 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 18:03:57 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 18:03:57 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 18:03:57 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 18:03:59 --> Severity: Notice  --> Undefined index: dest_url C:\xampp\htdocs\mcube_multi\application\controllers\user.php 240
+ERROR - 2016-03-25 18:03:59 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 18:03:59 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 18:03:59 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 18:03:59 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 18:04:04 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 18:04:04 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 18:04:15 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 18:04:15 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 18:04:15 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 18:04:15 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 18:04:17 --> Severity: Notice  --> Undefined index: dest_url C:\xampp\htdocs\mcube_multi\application\controllers\user.php 240
+ERROR - 2016-03-25 18:04:17 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 18:04:17 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 18:04:17 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 18:04:17 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 18:04:57 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 18:04:57 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 18:08:49 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 18:08:49 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 18:09:26 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 18:09:26 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 18:10:41 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 18:10:41 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 18:10:41 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 18:10:41 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 20:22:27 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 20:22:27 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 20:22:27 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 20:22:27 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 20:22:27 --> Severity: Notice  --> Undefined variable: dest_url C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 163
+ERROR - 2016-03-25 20:22:27 --> Severity: Notice  --> Undefined variable: dest_url_customer C:\xampp\htdocs\mcube_multi\application\views\user\new_tenant.php 164
+ERROR - 2016-03-25 20:27:49 --> Severity: Notice  --> Undefined index: dest_url C:\xampp\htdocs\mcube_multi\application\controllers\user.php 240
+ERROR - 2016-03-25 20:27:49 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 141
+ERROR - 2016-03-25 20:27:49 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 145
+ERROR - 2016-03-25 20:27:49 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 150
+ERROR - 2016-03-25 20:27:49 --> Severity: Notice  --> Undefined variable: customer_data C:\xampp\htdocs\mcube_multi\application\views\user\header.php 176
+ERROR - 2016-03-25 20:27:54 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 20:27:54 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 20:28:29 --> Severity: Warning  --> Missing argument 4 for Providers_Model::set_setting(), called in C:\xampp\htdocs\mcube_multi\application\models\providers_model.php on line 528 and defined C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 500
+ERROR - 2016-03-25 20:28:29 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 502
+ERROR - 2016-03-25 20:28:29 --> Severity: Warning  --> Missing argument 4 for Providers_Model::set_setting(), called in C:\xampp\htdocs\mcube_multi\application\models\providers_model.php on line 528 and defined C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 500
+ERROR - 2016-03-25 20:28:29 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 502
+ERROR - 2016-03-25 20:29:29 --> Severity: Warning  --> Missing argument 4 for Providers_Model::set_setting(), called in C:\xampp\htdocs\mcube_multi\application\models\providers_model.php on line 528 and defined C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 500
+ERROR - 2016-03-25 20:29:29 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 502
+ERROR - 2016-03-25 20:29:29 --> Severity: Warning  --> Missing argument 4 for Providers_Model::set_setting(), called in C:\xampp\htdocs\mcube_multi\application\models\providers_model.php on line 528 and defined C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 500
+ERROR - 2016-03-25 20:29:29 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 502
+ERROR - 2016-03-25 20:29:33 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 20:29:33 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 20:30:06 --> Severity: Notice  --> Undefined index: password C:\xampp\htdocs\mcube_multi\application\models\customers_model.php 122
+ERROR - 2016-03-25 20:30:09 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 20:30:09 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 20:32:05 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 20:32:05 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 20:32:35 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 20:32:35 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 20:33:17 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 20:33:17 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 20:33:35 --> Severity: Warning  --> Missing argument 4 for Providers_Model::set_setting(), called in C:\xampp\htdocs\mcube_multi\application\models\providers_model.php on line 528 and defined C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 500
+ERROR - 2016-03-25 20:33:35 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 502
+ERROR - 2016-03-25 20:33:35 --> Severity: Warning  --> Missing argument 4 for Providers_Model::set_setting(), called in C:\xampp\htdocs\mcube_multi\application\models\providers_model.php on line 528 and defined C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 500
+ERROR - 2016-03-25 20:33:35 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\providers_model.php 502
+ERROR - 2016-03-25 20:33:36 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 20:33:36 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 20:35:26 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 20:35:26 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
+ERROR - 2016-03-25 20:37:30 --> Severity: Warning  --> Missing argument 2 for Settings_Model::get_setting(), called in C:\xampp\htdocs\mcube_multi\application\views\backend\calendar.php on line 52 and defined C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 39
+ERROR - 2016-03-25 20:37:30 --> Severity: Notice  --> Undefined variable: id_tenant C:\xampp\htdocs\mcube_multi\application\models\settings_model.php 48
